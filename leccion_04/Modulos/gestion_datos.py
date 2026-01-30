@@ -1,7 +1,7 @@
 def listar_registros(lista):
     print("\n LISTA DE REGISTROS ")
     if not lista:
-        print("La lista está vacía.")
+        print("\n La lista está vacía.")
     else:
         for i, registro in enumerate(lista, 1):
             print(f"{i}. Nombre: {registro['nombre']} | Edad: {registro['edad']} | Categoría: {registro['categoria']}")
@@ -15,4 +15,4 @@ def buscar_registro(lista, nombre_buscar):
             encontrado = True
             break # Si se encuentra, deja de buscar
     if not encontrado:
-        print("Usuario no encontrado.")
+        print("\n Usuario no encontrado.")
