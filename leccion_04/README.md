@@ -24,6 +24,6 @@ o productos).
 **Los archivos:
  /Modulos/__init__.py (Para que python trate el direcctorio como paquete)
  /Modulos/menu.py ( )
- /Modulos/gestion_datos.py ( )
+ /Modulos/gestion_datos.py (Base de datos y operaciones logicas)
  main.py (Archivo central)
  README.md (Para dejar las notas necesarias para entender el proyecto)
