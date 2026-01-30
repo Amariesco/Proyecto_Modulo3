@@ -4,7 +4,7 @@ from Modulos.validaciones import clasificar_edad
 from Modulos.gestion_datos import base_datos_usuarios, emails_registrados, buscar_registro
 from Modulos.funciones_utiles import procesar_baja_usuario, imprimir_reporte_limpio # Nuevas funciones
 
-def ejecutar_sistema():
+def ejecutar_sistema(): # Controla el ciclo de vida del programa y el flujo del menú
     while True:
         opcion = mostrar_menu()
 
@@ -48,5 +48,5 @@ def ejecutar_sistema():
             print("\n Saliendo del sistema")
             break
 
-if __name__ == "__main__":
+if __name__ == "__main__": # Asegura que el programa solo corra si se ejecuta este archivo directamente
     ejecutar_sistema()

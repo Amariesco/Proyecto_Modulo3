@@ -1,3 +1,4 @@
+# Menu basico mostrado en pantalla
 def mostrar_menu():
     print("\n   Menú   ")
     print("1. Registrar nuevo usuario")

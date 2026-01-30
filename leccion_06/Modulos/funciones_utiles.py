@@ -1,6 +1,6 @@
 from Modulos.gestion_datos import base_datos_usuarios, emails_registrados
 
-def procesar_baja_usuario(nombre_eliminar): # Para eliminar un usuario.
+def procesar_baja_usuario(nombre_eliminar): # Para eliminar un usuario., retorna un booleano para indicar éxito.
     global base_datos_usuarios, emails_registrados
     
     usuario_encontrado = None
@@ -22,7 +22,7 @@ def procesar_baja_usuario(nombre_eliminar): # Para eliminar un usuario.
     
     return False
 
-def imprimir_reporte_limpio(lista):
+def imprimir_reporte_limpio(lista): # formatea diccionarios
     print("\n REPORTE DE REGISTROS ")
     if not lista:
         print("No hay usuarios en el sistema.")

@@ -1,12 +1,11 @@
 # Tuplas para Roles del sistema
-ROLES_SISTEMA = ('Admin', 'Invitado', 'Usuario')
+ROLES_SISTEMA = ('Admin', 'Invitado', 'Usuario') # Tupla inmutable
 
-# Sets para evitar duplicados
-emails_registrados = set()
+emails_registrados = set() # Set para evitar duplicados
 
-base_datos_usuarios = []
+base_datos_usuarios = [] # Lista para almacenamiento
 
-def listar_registros(lista):
+def listar_registros(lista): # Busca un usuario por nombre
     print("\n LISTA COMPLETA DE REGISTROS ")
     if not lista:
         print("\n La lista está vacía.")
