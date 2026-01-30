@@ -7,14 +7,16 @@ emails_registrados = set()
 base_datos_usuarios = []
 
 def listar_registros(lista):
-    print("\n LISTA DE REGISTROS COMPLETOS ")
+    print("\n LISTA COMPLETA DE REGISTROS ")
     if not lista:
         print("\n La lista está vacía.")
     else:
-        for i, registro in enumerate(lista, 1):
-            claves = list(registro.keys())
-            valores = list(registro.values())
-            print(f"{i}. Datos: {claves} -> {valores}")
+        for i, registro in enumerate(lista, 1):   
+            detalle = "" # Se crea una cadena vacía para ir armando el texto
+            for clave, valor in registro.items():             # .items() para obtener clave y valor
+                detalle += f"{clave.capitalize()}: {valor.capitalize()} | " # Va sumando al texto con el formato "Clave: Valor | "
+            print(f"{i}. {detalle}")
+
 
 def buscar_registro(lista, nombre_buscar):
     print(f"\nBuscando a: {nombre_buscar}")
