@@ -3,21 +3,22 @@ Ejercicios del Bootcamp - Módulo 3
 Se solicita para el proyecto:
 
 ------------------------------------------------------
-Lección 4: Control de flujo
+Lección 5: Estructuras de datos en Python
 
-Objetivo: Implementar ciclos for y while para automatizar el ingreso,
-consulta y gestión de datos repetitivos.
+ Objetivo: Utilizar listas, diccionarios, tuplas y sets para estructurar y
+manipular la información del sistema.
 
-Tareas a desarrollar:
- Crear menú iterativo con while True.
- Implementar un sistema de ingreso de múltiples registros (lista de usuarios
-o productos).
- Usar break y continue para controlar el flujo del menú.
- Simular acciones como “listar todos”, “buscar uno”, “eliminar uno”.
+ Tareas a desarrollar:
+ Guardar usuarios como diccionarios dentro de una lista.
+ Usar tuplas para datos inmutables como roles (('Admin', 'Invitado',
+'Usuario')).
+ Usar sets para evitar duplicados (e.g. mails únicos).
+ Aplicar métodos como .append(), .remove(), .get(), .keys(),
+.values().
 
  Archivos esperados:
- /modulos/menu.py (funciones del menú)
- /modulos/gestion_datos.py (gestión de listas y diccionarios)
+ /modulos/gestion_datos.py (actualizado con manipulación de
+estructuras)
 
 -----------------------------------------------------
 
