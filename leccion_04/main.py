@@ -7,7 +7,7 @@ from Modulos.validaciones import clasificar_edad
 
 base_datos = []
 
-while True:
+while True: # True para que el programa y no se detenga
     opcion = mostrar_menu()
 
     if opcion == "1":
